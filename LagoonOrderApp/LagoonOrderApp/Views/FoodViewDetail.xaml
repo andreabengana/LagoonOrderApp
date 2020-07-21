@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LagoonOrderApp.Views.FoodViewDetail">
+
+
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Image Source=" " HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                        Grid.Row="0"
+                        Grid.Column="0"/>
+
+                <Label x:Name="Description" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                        Grid.Row="1"
+                        Grid.Column="0"/>
+            </Grid>
+            <Frame>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label x:Name="lblProdName" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                        Grid.Row="0"
+                        Grid.Column="0"/>
+                    <Label Text="Preparation Time"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                        Grid.Row="0"
+                        Grid.Column="1"/>
+                    <Label x:Name="lblDateTime" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                        Grid.Row="1"
+                        Grid.Column="1"/>
+                    <Label Text="Price" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                            Grid.Row="1"
+                            Grid.Column="0"></Label>
+                    <Label x:Name="lblPrice" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                        Grid.Row="2"
+                        Grid.Column="0"/>
+
+                </Grid>
+            </Frame>
+            <Frame>
+                <Grid ColumnSpacing="0" Padding="0,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Image Source=" " HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"/>
+                    <Label Text="Price" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Grid.RowSpan="3"></Label>
+                    <Label x:Name="lblPrice2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Grid.RowSpan="3"></Label>
+                    <Label Text="Time Pickup:" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" 
+                        Grid.Row="0"
+                        Grid.Column="2"/>
+                    <Label Text="Cash on Hand:" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"
+                        Grid.Row="1"
+                        Grid.Column="2"/>
+
+                    <Label Text="Quantity" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"
+                        Grid.Row="2"
+                        Grid.Column="2"/>
+
+                    <TimePicker x:Name="enTimePickup" 
+                        Grid.Row="0"
+                        Grid.Column="3"
+                        Format="hh:mm:ss"
+                        />
+
+                    <Entry x:Name="enCashOnHand" 
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        />
+                    <Entry x:Name="enQty" 
+                        Grid.Row="2"
+                        Grid.Column="3"
+                        />
+
+                </Grid>
+            </Frame>
+            <Button Text="Order" HorizontalOptions="Center" VerticalOptions="End"
+                    FontSize="Large"
+                    x:Name="PlaceOrder"
+                    Clicked="PlaceOrder_Clicked"
+                    />
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>

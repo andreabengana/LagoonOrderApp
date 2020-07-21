@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LagoonOrderApp.Views.StartPage"
+             Title="Lagoon">
+
+    <AbsoluteLayout VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+
+        <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+            Source="StartPageBG.png" Aspect="AspectFill"/>
+
+        <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+            <StackLayout Orientation="Vertical" Margin="0, 300, 0, 0">
+                <Button Text="STUDENT"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        x:Name="StudentButton"
+                        Clicked="StudentButton_Clicked"
+                        CornerRadius="10"
+                        WidthRequest="200"
+                        BackgroundColor="#c5d86d"
+                        TextColor="White"
+                        FontFamily="Segoe UI Regular"
+                        FontSize="16"
+                        Margin="0, 50, 0, 0"/>
+
+                <Button Text="VENDOR"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        x:Name="VendorButton"
+                        Clicked="VendorButton_Clicked"
+                        CornerRadius="10"
+                        WidthRequest="200"
+                        BackgroundColor="#c5d86d"
+                        TextColor="White"
+                        FontFamily="Segoe UI Regular"
+                        FontSize="16"
+                        Margin="0, 0, 0, 60"/>
+            </StackLayout>
+        </ScrollView>
+
+    </AbsoluteLayout>
+
+    <!--<ContentPage.Content>
+        <StackLayout BackgroundColor="#c5d86d">
+            <Image Source="lagoonlogo.png" WidthRequest="200"></Image>
+
+            <StackLayout BackgroundColor="#c5d86d">
+                <Button Text="STUDENT"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        x:Name="StudentButton"
+                        Clicked="StudentButton_Clicked"
+                        CornerRadius="15"
+                        WidthRequest="250"
+                        BackgroundColor="#86615c"
+                        TextColor="White"
+                        FontFamily="Segoe UI Regular"
+                        FontSize="16"
+                        Margin="0, 50, 0, 0"/>
+
+                <Button Text="VENDOR"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        x:Name="VendorButton"
+                        Clicked="VendorButton_Clicked"
+                        CornerRadius="15"
+                        WidthRequest="250"
+                        BackgroundColor="#86615c"
+                        TextColor="White"
+                        FontFamily="Segoe UI Regular"
+                        FontSize="16"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>-->
+</ContentPage>

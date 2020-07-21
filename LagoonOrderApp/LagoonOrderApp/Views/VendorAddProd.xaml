@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LagoonOrderApp.Views.VendorAddProd">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Product Name"/>
+            <Entry x:Name="enProdName" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <Label Text="Price"/>
+            <Entry x:Name="enProdPrice" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <Label Text="Preparation Time"/>
+            <TimePicker x:Name="enPrepTime" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <Label Text="Product Type"/>
+            <Entry x:Name="enProdType" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <Label Text="Product Description"/>
+            <Entry x:Name="enProdDesc" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <Button x:Name="Submit" Clicked="Submit_Clicked"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

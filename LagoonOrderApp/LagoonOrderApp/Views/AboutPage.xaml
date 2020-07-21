@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LagoonOrderApp.Views.AboutPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#c5d86d">
+            <Image Source="lagoonlogo.png" WidthRequest="200"></Image>
+
+            <StackLayout BackgroundColor="#c5d86d">
+                <Label LineBreakMode="WordWrap"
+                   Font="Segoe UI, Bold, 18"
+                   TextColor="White"
+                   WidthRequest="140"
+                   Text="Developed by: Group 1"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   Margin="0, 0, 0, 30"/>
+
+                <Label Font="Segoe UI, 16" TextColor="White" Text="Abengana, Andre" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                <Label Font="Segoe UI, 16" TextColor="White" Text="Ganado, Luisver" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                <Label Font="Segoe UI, 16" TextColor="White" Text="Reyes, VJ Christian" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                <Label Font="Segoe UI, 16" TextColor="White" Text="Sansaet, Romeo Jr." HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

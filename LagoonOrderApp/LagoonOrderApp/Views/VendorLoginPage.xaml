@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LagoonOrderApp.Views.VendorLoginPage"
+             Title="Login">
+    
+    <AbsoluteLayout VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+
+        <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+            Source="VendorLoginBG.png" Aspect="AspectFill"/>
+
+        <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+            <StackLayout Orientation="Vertical">
+                <Entry Placeholder="Username"
+                       x:Name="vendorUsernameEntry"
+                       MaxLength="20"
+                       WidthRequest="250"
+                       HorizontalOptions="Center"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"
+                       Margin="0, 300, 0, 0"/>
+
+                <Entry IsPassword="True"
+                       Placeholder="Password"
+                       x:Name="vendorPasswordEntry"
+                       MaxLength="20"
+                       WidthRequest="250"
+                       HorizontalOptions="Center"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"
+                       Margin="0, 0, 0, 10"/>
+
+                <Button Text="LOGIN"
+                        HorizontalOptions="Center"
+                        x:Name="VendorLoginButton"
+                        Clicked="VendorLoginButton_Clicked"
+                        CornerRadius="10"
+                        WidthRequest="200"
+                        BackgroundColor="White"
+                        TextColor="#9aab4a"
+                        FontFamily="Segoe UI Regular"
+                        FontSize="16"/>
+            </StackLayout>
+        </ScrollView>
+
+    </AbsoluteLayout>
+
+    <!--<ContentPage.Content>
+
+        <StackLayout BackgroundColor="#c5d86d">
+            <Image Source="lagoonlogo.png" WidthRequest="200"></Image>
+
+            <StackLayout>
+                <Entry Placeholder="Username"
+                       x:Name="vendorUsernameEntry"
+                       MaxLength="20"
+                       WidthRequest="250"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"
+                       Margin="0, 30, 0, 0"/>
+
+                <Entry IsPassword="True"
+                       Placeholder="Password"
+                       x:Name="vendorPasswordEntry"
+                       MaxLength="20"
+                       WidthRequest="250"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"
+                       Margin="0, 0, 0, 30"/>
+                
+                <Button Text="LOGIN"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    x:Name="VendorLoginButton"
+                    CornerRadius="15"
+                    WidthRequest="250"
+                    BackgroundColor="#86615c"
+                    TextColor="White"
+                    FontFamily="Segoe UI Regular"
+                    FontSize="16"/>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>-->
+</ContentPage>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LagoonOrderApp.Views.VendorView"
+             BackgroundImage="loginBackground.png"
+             Title="Vendor">
+
+    <AbsoluteLayout VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+
+        <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+            Source="VendorMenuBG.png" Aspect="AspectFill"/>
+
+        <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+            <StackLayout Orientation="Vertical" Margin="0, 300, 0, 0">
+                <Button x:Name="Products"
+                        Text="Products"  
+                        Clicked="Products_Clicked"
+                        CornerRadius="10"
+                        WidthRequest="200"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        TextColor="#c5d86d"
+                        BackgroundColor="White"
+                        FontSize="16"
+                />
+                <Button x:Name="Orders"
+                        Clicked="Orders_Clicked"
+                        Text="Orders"
+                        CornerRadius="10"
+                        WidthRequest="200"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        TextColor="#c5d86d"
+                        BackgroundColor="White"
+                        FontSize="16"
+                />
+                <Button x:Name="About"
+                        Clicked="About_Clicked"
+                        Text="About"
+                        CornerRadius="10"
+                        WidthRequest="200"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        TextColor="#c5d86d"
+                        BackgroundColor="White"
+                        FontSize="16"
+                        Margin="0, 0, 0, 60"
+                        />
+                
+                
+            </StackLayout>
+        </ScrollView>
+
+    </AbsoluteLayout>
+
+
+    <!--<ContentPage.Content>
+        <Frame HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="200" WidthRequest="200" BackgroundColor="#c5d86d">
+            <StackLayout Orientation="Vertical">
+                <Button x:Name="Products"
+                        Text="Products"  
+                        Clicked="Products_Clicked"
+                        FontAttributes="Bold" 
+                        FontSize="Medium" 
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                />
+                <Button x:Name="Orders"
+                        Clicked="Orders_Clicked"
+                        Text="Orders"
+                        FontAttributes="Bold" 
+                        FontSize="Medium" 
+                        HorizontalOptions="FillAndExpand"  
+                        VerticalOptions="CenterAndExpand"
+                />
+                <Button x:Name="About"
+                        Clicked="About_Clicked"
+                        Text="About"
+                        FontAttributes="Bold" 
+                        FontSize="Medium" 
+                        HorizontalOptions="FillAndExpand"  
+                        VerticalOptions="CenterAndExpand"
+                />
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>-->
+</ContentPage>

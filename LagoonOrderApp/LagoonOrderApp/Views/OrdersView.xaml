@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LagoonOrderApp.Views.OrdersView">
+  <ListView x:Name="MyListView"
+            ItemsSource="{Binding Items}"
+            ItemTapped="Handle_ItemTapped"
+            HasUnevenRows="True"
+            CachingStrategy="RecycleElement">
+            
+    <!--Built in Cells>
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <TextCell Text="{Binding .}" />
+        </DataTemplate>
+    </ListView.ItemTemplate-->
+    
+    <!--Custom View Cells-->
+    
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Label Text="{Binding PickupTime}" 
+                   Style="{DynamicResource ListItemTextStyle}" />
+            <Label Text="{Binding TotalAmount}"
+                   Style="{DynamicResource ListItemDetailTextStyle}"/>
+            <Label Text="{Binding ID_Order}"
+                Style="{DynamicResource ListItemDetailTextStyle}"/>
+            <Label Text="Product Reference Number"
+                Style="{DynamicResource ListItemDetailTextStyle}"/>
+            <Label Text="{Binding ID_StoreProduct}"
+                Style="{DynamicResource ListItemDetailTextStyle}"/>
+          </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+    
+  </ListView>
+</ContentPage>
